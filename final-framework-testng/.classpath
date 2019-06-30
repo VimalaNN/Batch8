@@ -19,5 +19,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/VimalaNarayanaswamy/Downloads/dom4j-1.3.jar/dom4j-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VimalaNarayanaswamy/Downloads/log4j-1.2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VimalaNarayanaswamy/Downloads/extentreports-2.40.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
