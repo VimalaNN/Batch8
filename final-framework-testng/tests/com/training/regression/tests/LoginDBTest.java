@@ -23,7 +23,7 @@ import com.training.utility.DriverNames;
 public class LoginDBTest {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	//private LoginPOM loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 	private GenericMethods genericMethods; 

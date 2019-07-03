@@ -111,6 +111,7 @@ private WebDriver driver;
 		this.ProductText.click();
 	}
 	
+	
 	public void windowSwitch() {
 		
 		Set<String> widnowIDs = driver.getWindowHandles();

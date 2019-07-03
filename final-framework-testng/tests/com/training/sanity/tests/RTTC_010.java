@@ -46,12 +46,12 @@ public class RTTC_010 {
 		driver.get(baseUrl);
 	}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
 		driver.quit();
 		}
-		*/
+		
 	
 	
 	@Test
