@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class RTTCP_037 {
+public class Categories{
 	
 	private WebDriver driver;
-	public RTTCP_037(WebDriver driver) {
+	public Categories(WebDriver driver) {
 	this.driver = driver;
 	PageFactory.initElements(driver, this);
 
@@ -28,37 +28,16 @@ public class RTTCP_037 {
 	private WebElement Errore;
 
 
-public void inCorrectpwd(String userName,String password) {
-	this.userName.sendKeys(userName);
-	this.password.sendKeys(password);
-	this.LoginBtn.click();
+public String inCorrectpwdError() {
 	String actual = this.Errore.getText();
-	String expected = "Invalid token session. Please login again.";
+	String expected = "No match for Username and/or Password.";
 	Assert.assertEquals(actual, expected);
+	return expected;
 	
 }
 
-public void inCorrectpwd2(String userName,String password) {
-	this.userName.sendKeys(userName);
-	this.password.sendKeys(password);
-	this.LoginBtn.click();
-	String actual = this.Errore.getText();
-	String expected = "Invalid token session. Please login again.";
-	Assert.assertEquals(actual, expected);
 	
-}
-public void inCorrectUsername(String userName,String password) {
-	this.userName.clear();
-	this.password.clear();
-	this.userName.sendKeys(userName);
-	this.password.sendKeys(password);
-	this.LoginBtn.click();
-	String actual = this.Errore.getText();
-	String expected = "Invalid token session. Please login again.";
-	Assert.assertEquals(actual, expected);
-	
-	
-}
+
 public void inCorrectUsername1(String userName,String password) {
 	this.userName.clear();
 	this.password.clear();

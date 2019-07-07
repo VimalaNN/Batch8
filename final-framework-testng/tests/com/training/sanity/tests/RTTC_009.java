@@ -73,8 +73,6 @@ public class RTTC_009 {
 		screenShot.captureScreenShot("ProductSelect");
 		log.info("Product has been selected");
 		Thread.sleep(20000);
-		
-		Thread.sleep(100000);
 		RTTC09.windowSwitch();
 		Thread.sleep(20000);
 		screenShot.captureScreenShot("WindowSwitch");
